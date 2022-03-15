@@ -17,6 +17,8 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
+git clone https://github.com/linkease/istore.git package/istore
+
 # 删除自定义源默认的 argon 主题
 rm -rf package/lean/luci-theme-argon
 
