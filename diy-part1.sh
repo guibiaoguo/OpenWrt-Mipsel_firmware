@@ -17,13 +17,13 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-git clone https://github.com/linkease/istore.git package/istore
-git clone https://github.com/linkease/istore.git package/istore-ui
+#git clone https://github.com/linkease/istore.git package/istore
+#git clone https://github.com/linkease/istore.git package/istore-ui
 # 删除自定义源默认的 argon 主题
-rm -rf package/lean/luci-theme-argon
+#rm -rf package/lean/luci-theme-argon
 
 # 拉取 argon 原作者的源码
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # 替换默认主题为 luci-theme-argon
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
