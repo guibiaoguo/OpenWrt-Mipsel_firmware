@@ -11,6 +11,7 @@
 name: Build OpenWrt
 
 on:
+  push:
   repository_dispatch:
   workflow_dispatch:
     inputs:
